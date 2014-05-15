@@ -3,7 +3,7 @@
 AsyncFilterComboBox is an extended version of Vaadin ComboBox which allows to change the way
 filtering is triggered (like with setTextChangeEventMode on TextField).
 
-## Download release
+## Download release (cooming soon)
 
 Official releases of this add-on are available at Vaadin Directory. For Maven instructions, download and reviews, go to http://vaadin.com/addon/asyncfiltercombobox
 
@@ -40,14 +40,17 @@ Here is a simple example on how to try out the add-on component:
 
 Add widgetset dependency:
 
+```xml
 <inherits name="it.zero11.vaadin.asyncfiltercombobox.WidgetSet" /> 
+```
 
 Use AsyncFilterComboBox like built-in ComboBox (the default behaviour include 500ms delay).
 
 To Change the delay call:
-
-	asyncfilterComboBox.setFilterChangeTimeout(2000);
-
+```
+asyncfilterComboBox.setFilterChangeTimeout(2000);
+```
 To Revert the behaviour to built-in ComboBox:
-
-	asyncfilterComboBox.setFilterChangeEventMode(FilterChangeEventMode.EAGER);
+```
+asyncfilterComboBox.setFilterChangeEventMode(FilterChangeEventMode.EAGER);
+```
