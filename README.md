@@ -3,7 +3,7 @@
 AsyncFilterComboBox is an extended version of Vaadin ComboBox which allows to change the way
 filtering is triggered (like with setTextChangeEventMode on TextField).
 
-## Download release (cooming soon)
+## Download release
 
 Official releases of this add-on are available at Vaadin Directory. For Maven instructions, download and reviews, go to http://vaadin.com/addon/asyncfiltercombobox
 
