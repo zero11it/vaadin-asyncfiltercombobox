@@ -9,6 +9,9 @@ Official releases of this add-on are available at Vaadin Directory. For Maven in
 
 ## Release notes
 
+### Version 0.2.0
+- Disabled lazy mode when scrolling list with page up/down keys
+
 ### Version 0.1.0
 - First Public Release
 
@@ -31,6 +34,10 @@ Contributions are welcome, but there are no guarantees that they are accepted as
 AsyncFilterComboBox is distributed under Apache License 2.0. For license terms, see LICENSE.txt.
 
 AsyncFilterComboBox is written by Zero11
+
+## Contributors
+
+[Kukis13](https://github.com/Kukis13) Disabled lazy mode when scrolling list with page up/down keys.
 
 # Developer Guide
 

@@ -16,7 +16,9 @@
 
 package it.zero11.vaadin.asyncfiltercombobox.client;
 
+import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.Timer;
+import com.vaadin.client.VConsole;
 import com.vaadin.client.ui.VFilterSelect;
 
 public class AsyncFilterComboBoxWidget extends VFilterSelect{
@@ -50,13 +52,14 @@ public class AsyncFilterComboBoxWidget extends VFilterSelect{
 	}
 
 	public void filterOptions(int page, String filter) {
-		if (filterChangeEventMode.equals(FILTERCHANGE_MODE_LAZY)){
-			queuedPage = page;
-			queuedFilter = filter;
-			scheduleFilterOption();
-		}else{
-			super.filterOptions(page, filter);
+		if (scheduled){
+			filterChangeEventTrigger.cancel();
+			if (filter.equals(lastFilter) && !filter.equals(tb.getText())){
+				filter = tb.getText();
+			}
 		}
+		
+		super.filterOptions(page, filter);
 	}
 	
 	public void scheduleFilterOption(){
