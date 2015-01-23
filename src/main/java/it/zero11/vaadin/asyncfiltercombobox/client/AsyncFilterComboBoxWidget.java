@@ -16,9 +16,7 @@
 
 package it.zero11.vaadin.asyncfiltercombobox.client;
 
-import com.google.gwt.core.client.GWT;
 import com.google.gwt.user.client.Timer;
-import com.vaadin.client.VConsole;
 import com.vaadin.client.ui.VFilterSelect;
 
 public class AsyncFilterComboBoxWidget extends VFilterSelect{
